@@ -5,7 +5,7 @@ import threading
 from threading import Timer
 from telebot.types import ChatPermissions
 
-TOKEN = 'YOUR_TOKEN_HERE'
+TOKEN = '7158222093:AAEABzINhhlYiBdltEVOLqKe7Kkg-jTs-qs'
 bot = telebot.TeleBot(TOKEN)
 
 welcomemessage = "Добро пожаловать в наш уютный Linux Чат🐧. Здесь мы обсуждаем различные вещи связанные с Linux. Прочитайте правила чата в закрепе. Незнание их не освобождает от ответственности!"
@@ -19,7 +19,7 @@ def is_user_admin(chat_id, user_id):
     admin_list = bot.get_chat_administrators(chat_id)
     return any(admin.user.id == user_id for admin in admin_list)
 
-@bot.message_handler(commands=['ban, kick'])
+@bot.message_handler(commands=['ban'])
 def handle_ban(message):
     chat_id = message.chat.id
     user_id = message.from_user.id
