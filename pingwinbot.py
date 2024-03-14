@@ -5,7 +5,7 @@ import threading
 from threading import Timer
 from telebot.types import ChatPermissions
 
-TOKEN = '7158222093:AAEABzINhhlYiBdltEVOLqKe7Kkg-jTs-qs'
+TOKEN = 'YOUR_TOKEN_HERE'
 bot = telebot.TeleBot(TOKEN)
 
 welcomemessage = "Добро пожаловать в нашу уютную Партию Линуксоидов и Юниксоидов СНГ!. Здесь мы обсуждаем различные вещи связанные с Linux."
